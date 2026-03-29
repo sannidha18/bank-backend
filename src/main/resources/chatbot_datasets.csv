@@ -1,0 +1,194 @@
+query,response
+hello,Hello! How can I assist you today?
+hi,Hi there! How can I help you?
+hey,Hey! What can I do for you?
+good morning,Good morning! How can I help you?
+good evening,Good evening! How can I assist you?
+,
+check balance,Your balance is shown on the dashboard
+show balance,You can view your balance on dashboard
+account balance,Your account balance is displayed on dashboard
+what is my balance,Check your balance on dashboard
+balance amount,Your balance is visible on dashboard
+current balance,Your current balance is shown on dashboard
+,
+deposit money,Use deposit option in dashboard
+add money,Go to deposit section to add money
+put money,Use deposit feature to add funds
+how to deposit,Click deposit option on dashboard
+deposit cash,Use deposit option in dashboard
+add funds,Use deposit feature to add funds
+,
+withdraw money,Use withdraw option in dashboard
+take money out,Use withdraw option to take money
+withdraw cash,Use withdraw feature in dashboard
+how to withdraw,Click withdraw option in dashboard
+remove money,Use withdraw option
+,
+transfer money,Use transfer page to send money
+send money,Go to transfer section to send money
+pay someone,Use transfer option to pay
+transfer funds,Use transfer feature
+how to transfer money,Go to transfer page and select user
+money transfer,Use transfer section
+,
+check transactions,View your transaction history in dashboard
+transaction history,Check all transactions in dashboard
+recent transactions,View recent transactions on dashboard
+show transactions,You can see transactions in dashboard
+account activity,Check your account activity in dashboard
+,
+login issue,Please check your username and password
+cannot login,Verify your login credentials
+login error,Check username or password
+forgot password,Please contact admin to reset password
+password reset,Contact admin to reset password
+,
+contact support,Email support@bank.com
+help,I am here to help you with banking queries
+need help,Ask me any banking related question
+support,Contact support@bank.com
+,
+loan details,Please contact support for loan information
+loan information,Visit loan section or contact support
+loan interest,Check with bank support for details
+,
+open account,Use register option to create new account
+create account,Go to registration page
+new account,Use register option
+,
+logout,Click logout button to exit
+sign out,Use logout option
+exit account,Click logout button
+,
+what is interest rate,Please contact bank support
+interest details,Check with bank support
+bank interest,Contact support for interest info
+,
+how to deposit money,Use deposit option on dashboard
+how to withdraw money,Use withdraw option on dashboard
+how to send money,Use transfer page
+how to check balance,Open dashboard to see balance
+,
+is my money safe,Yes your transactions are secure
+bank security,Your data is सुरक्षित and protected
+is system secure,Yes this system is secure
+,
+thank you,Glad to help you!
+thanks,You're welcome!
+thx,Happy to help!
+ok,Alright!
+okay,Okay noted!
+,
+bye,Goodbye! Have a great day!
+see you,See you soon!
+goodbye,Bye! Take care!
+,
+who are you,I am your banking assistant chatbot
+what can you do,I can help with banking queries
+your purpose,I assist users with banking services
+,
+can i transfer money,Yes use transfer page
+can i withdraw money,Yes use withdraw option
+can i deposit money,Yes use deposit option
+,
+show my balance,Your balance is available on dashboard
+tell my balance,Check dashboard for balance
+balance check,View balance on dashboard
+,
+how to use app,Use dashboard options for operations
+how does this work,Use menu options to navigate
+,
+can i see transactions,Yes check dashboard history
+show history,View transaction history
+recent activity,Check dashboard
+,
+is registration free,Yes registration is free
+do i need account,Yes you need to register first
+,
+can i change password,Contact admin to change password
+update password,Contact admin
+,
+what is transfer limit,Contact support for limits
+daily limit,Check with support
+,
+is there any fee,Contact support for charges
+transaction charges,Check bank policy
+,
+can i cancel transfer,Currently not available
+undo transaction,Not supported currently
+,
+how to contact bank,Email support@bank.com
+bank contact,Reach out to support@bank.com
+,
+what services are available,Deposit withdraw transfer and chatbot
+features of app,It includes banking and chatbot support
+,
+can i use mobile,Yes system is web based
+is this online banking,Yes it is a web banking system
+,
+is this real bank,This is a demo banking system
+demo app,This is for learning purpose
+,
+how secure is this,Your data is safe and secure
+data protection,We ensure data safety
+,
+who developed this,This system is developed as a project
+project info,This is an academic project
+,
+what is dashboard,Dashboard shows balance and options
+dashboard use,Use dashboard for all operations
+,
+can i delete account,Contact admin for deletion
+remove account,Contact admin
+,
+can i update details,Feature not available currently
+edit profile,Contact admin
+,
+can i check other users balance,No access restricted
+privacy policy,User data is private
+,
+is my data private,Yes your data is secure
+data privacy,We maintain confidentiality
+,
+what is chatbot,I am a chatbot assistant
+chatbot purpose,I help with queries
+,
+can you help me,Yes ask me anything
+i need help,I am here to help
+,
+bank name,This is AI Banking System
+app name,AI Banking Chatbot System
+,
+how to login,Enter username and password
+login steps,Use login page
+,
+what if error occurs,Try again or contact support
+system error,Please retry
+,
+can i use multiple accounts,Yes you can register multiple users
+multiple users supported,Yes supported
+,
+how fast is transfer,Transfer is instant
+instant transfer,Yes immediate processing
+,
+can i see receiver name,Yes shown in transfer history
+receiver info,Available in history
+,
+how to logout,Click logout button
+exit system,Use logout option
+,
+how to start,Register then login
+getting started,Create account first
+,
+what is balance meaning,Balance is your available money
+account meaning,Account holds your money
+,
+what is deposit meaning,Deposit means adding money
+withdraw meaning,Withdraw means taking money
+,
+transfer meaning,Transfer means sending money
+transaction meaning,Transaction is money movement
+,
+more help,Ask me more questions
+anything else,Let me know your query
