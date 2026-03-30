@@ -11,7 +11,6 @@ import com.example.demo.service.TransactionService;
 
 @RestController
 @RequestMapping("/transaction")
-@CrossOrigin(origins = "*")
 public class TransactionController {
 
     @Autowired

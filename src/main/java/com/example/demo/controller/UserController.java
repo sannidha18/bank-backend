@@ -11,7 +11,6 @@ import com.example.demo.service.UserService;
 
 @RestController
 @RequestMapping("/user")
-@CrossOrigin(origins = "*")
 public class UserController {
 
     @Autowired

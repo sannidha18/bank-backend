@@ -9,7 +9,6 @@ import com.example.demo.service.AdminService; // ✅ ADD THIS
 
 @RestController
 @RequestMapping("/chatbot")
-@CrossOrigin(origins = "*")
 public class ChatbotController {
 
     @Autowired
