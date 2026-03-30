@@ -31,13 +31,13 @@ public class UserService {
     // 🔹 LOGIN (ADMIN + USER)
     public User login(String username, String password) {
 
-        // 🔥 ADMIN LOGIN (HARDCODED)
+        // 🔥 ADMIN LOGIN
         if (username != null && password != null &&
             username.trim().equals("admin") &&
             password.trim().equals("admin123")) {
 
             User admin = new User();
-            admin.setId(999L); // important
+            admin.setId(999L);
             admin.setUsername("admin");
             admin.setRole("ADMIN");
             admin.setBalance(0);
@@ -48,11 +48,13 @@ public class UserService {
         // 👤 NORMAL USER LOGIN
         User user = userRepository.findByUsername(username);
 
-        if (user != null && user.getPassword().equals(password)) {
+        // ✅ SAFE CHECK (FIX)
+        if (user != null && user.getPassword() != null &&
+            user.getPassword().equals(password)) {
             return user;
         }
 
-        return null; // invalid credentials
+        return null;
     }
 
     // 🔹 Get user by ID

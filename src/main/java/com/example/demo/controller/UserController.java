@@ -41,7 +41,7 @@ public class UserController {
             if (loggedUser == null) {
                 return ResponseEntity
                         .status(401)
-                        .body("Invalid username or password ❌");
+                        .body("Invalid username/password");
             }
 
             return ResponseEntity.ok(loggedUser);
@@ -50,7 +50,7 @@ public class UserController {
             e.printStackTrace();
             return ResponseEntity
                     .status(500)
-                    .body("Server error ❌");
+                    .body("Server error");
         }
     }
 
