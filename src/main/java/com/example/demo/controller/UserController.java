@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
 import java.util.List;
-
+import org.springframework.http.ResponseEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,18 +30,28 @@ public class UserController {
 
     // 🔹 Login
     @PostMapping("/login")
-    public User login(@RequestBody User user) {
+    public ResponseEntity<?> login(@RequestBody User user) {
 
-        User loggedUser = userService.login(
-                user.getUsername(),
-                user.getPassword()
-        );
+        try {
+            User loggedUser = userService.login(
+                    user.getUsername(),
+                    user.getPassword()
+            );
 
-        if (loggedUser == null) {
-            return null; // frontend will handle
+            if (loggedUser == null) {
+                return ResponseEntity
+                        .status(401)
+                        .body("Invalid username or password ❌");
+            }
+
+            return ResponseEntity.ok(loggedUser);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity
+                    .status(500)
+                    .body("Server error ❌");
         }
-
-        return loggedUser;
     }
 
     // 🔹 Get user by ID
