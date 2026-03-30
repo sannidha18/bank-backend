@@ -9,16 +9,13 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 public class CorsConfig {
 
     @Bean
-    WebMvcConfigurer corsConfigurer() {   // ❗ REMOVE public here
+    public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins(
-                                "http://localhost:3000",
-                                "https://bank-frontend-ochre.vercel.app"
-                        )
-                        .allowedMethods("*")
+                        .allowedOriginPatterns("*") // ✅ FIX
+                        .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*")
                         .allowCredentials(true);
             }
