@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -32,31 +33,28 @@ public class UserController {
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody User user) {
 
-        try {
-            User loggedUser = userService.login(
-                    user.getUsername(),
-                    user.getPassword()
-            );
+        User loggedUser = userService.login(
+                user.getUsername(),
+                user.getPassword()
+        );
 
-            if (loggedUser == null) {
-                return ResponseEntity
-                        .status(401)
-                        .body("Invalid username/password");
-            }
-
-            return ResponseEntity.ok(loggedUser);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            return ResponseEntity
-                    .status(500)
-                    .body("Server error");
+        if (loggedUser == null) {
+            return ResponseEntity.status(401).body("Invalid username/password ❌");
         }
+
+        return ResponseEntity.ok(loggedUser);
     }
 
     // 🔹 Get user by ID
     @GetMapping("/get/{id}")
-    public User getUser(@PathVariable Long id) {
-        return userService.getUserById(id);
+    public ResponseEntity<?> getUser(@PathVariable Long id) {
+
+        User user = userService.getUserById(id);
+
+        if (user == null) {
+            return ResponseEntity.status(404).body("User not found ❌");
+        }
+
+        return ResponseEntity.ok(user);
     }
 }
